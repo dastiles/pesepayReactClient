@@ -55,6 +55,10 @@ npm install your-package-name
 
        const result = await MakePayment(paymentBody, encryptionKey, integrationKey);
        setPaymentResult(result);
+       // save the reference number so that u can use it to check the payments
+        localStorage.setItem("reference", result.referenceNumber)
+       // after getting the result redirect to pesepay
+        window.location.href = result?.redirectUrl;
      };
 
      return (
@@ -164,6 +168,10 @@ npm install your-package-name
      makePayment() {
        this.paymentService.makePayment().then(result => {
          this.paymentResult = result;
+          // save the reference number so that u can use it to check the payments
+        localStorage.setItem("reference", result.referenceNumber)
+       // after getting the result redirect to pesepay
+        window.location.href = result?.redirectUrl;
        }).catch(error => console.error("Payment Error:", error));
      }
 
