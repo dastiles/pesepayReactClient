@@ -1,0 +1,32 @@
+{
+  "name": "pesepayclient",
+  "version": "1.0.0",
+  "description": "pesepay client to make online paymenys online",
+   "main": "dist/index.js",  
+  "types": "dist/index.d.ts",  
+  "scripts": {
+    "build": "tsc",  
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecocash",
+    "innbucks",
+    "visa",
+    "zimbabwe",
+    "online"
+  ],
+   "files": [
+    "dist"  
+  ],
+  "author": "codevirtus",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "microbundle": "^0.15.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "crypto-js": "^4.2.0"
+  }
+}
