@@ -18,7 +18,7 @@ This package provides utilities for encrypting and decrypting payment informatio
 Install the package via npm:
 
 ```bash
-npm install your-package-name
+npm install pesepayclient
 ```
 
 
@@ -76,7 +76,7 @@ npm install your-package-name
 
    ```javascript
    import React, { useState } from 'react';
-   import { CheckPayment } from 'your-package-name';
+   import { CheckPayment } from 'pesepayclient';
 
    const CheckPaymentComponent = () => {
      const [paymentStatus, setPaymentStatus] = useState(null);
