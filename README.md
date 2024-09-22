@@ -30,14 +30,14 @@ npm install your-package-name
 1. **Import the functions:**
 
    ```javascript
-   import { MakePayment, CheckPayment, EncryptPayment, DecriptPayment } from 'your-package-name';
+   import { MakePayment, CheckPayment, EncryptPayment, DecriptPayment } from 'pesepayclient';
    ```
 
 2. **Example of Making a Payment:**
 
    ```javascript
    import React, { useState } from 'react';
-   import { MakePayment } from 'your-package-name';
+   import { MakePayment } from 'pesepayclient';
 
    const PaymentComponent = () => {
      const [paymentResult, setPaymentResult] = useState(null);
@@ -117,7 +117,7 @@ npm install your-package-name
    // payment.service.ts
 
    import { Injectable } from '@angular/core';
-   import { MakePayment, CheckPayment } from 'your-package-name';
+   import { MakePayment, CheckPayment } from 'pesepayclient';
 
    @Injectable({
      providedIn: 'root',
